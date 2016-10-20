@@ -1,0 +1,57 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/pi/Desktop/alexa-avs-sample-app/samples/wakeWordAgent/tst/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec839420418/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec839420418.dir/build.make CMakeFiles/cmTryCompileExec839420418.dir/build
+make[1]: Entering directory '/home/pi/Desktop/alexa-avs-sample-app/samples/wakeWordAgent/tst/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/pi/Desktop/alexa-avs-sample-app/samples/wakeWordAgent/tst/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec839420418.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec839420418.dir/CheckSymbolExists.c.o   -c /home/pi/Desktop/alexa-avs-sample-app/samples/wakeWordAgent/tst/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec839420418
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec839420418.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec839420418.dir/CheckSymbolExists.c.o  -o cmTryCompileExec839420418 -rdynamic 
+CMakeFiles/cmTryCompileExec839420418.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x38): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTryCompileExec839420418.dir/build.make:88: recipe for target 'cmTryCompileExec839420418' failed
+make[1]: *** [cmTryCompileExec839420418] Error 1
+make[1]: Leaving directory '/home/pi/Desktop/alexa-avs-sample-app/samples/wakeWordAgent/tst/CMakeFiles/CMakeTmp'
+Makefile:118: recipe for target 'cmTryCompileExec839420418/fast' failed
+make: *** [cmTryCompileExec839420418/fast] Error 2
+
+File /home/pi/Desktop/alexa-avs-sample-app/samples/wakeWordAgent/tst/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/pi/Desktop/alexa-avs-sample-app/samples/wakeWordAgent/tst/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1728016329/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1728016329.dir/build.make CMakeFiles/cmTryCompileExec1728016329.dir/build
+make[1]: Entering directory '/home/pi/Desktop/alexa-avs-sample-app/samples/wakeWordAgent/tst/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/pi/Desktop/alexa-avs-sample-app/samples/wakeWordAgent/tst/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1728016329.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec1728016329.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.0/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1728016329
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1728016329.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec1728016329.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1728016329 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTryCompileExec1728016329.dir/build.make:88: recipe for target 'cmTryCompileExec1728016329' failed
+make[1]: *** [cmTryCompileExec1728016329] Error 1
+make[1]: Leaving directory '/home/pi/Desktop/alexa-avs-sample-app/samples/wakeWordAgent/tst/CMakeFiles/CMakeTmp'
+Makefile:118: recipe for target 'cmTryCompileExec1728016329/fast' failed
+make: *** [cmTryCompileExec1728016329/fast] Error 2
+
+

@@ -14,17 +14,17 @@
  * not need to modify those elements.
  */
 var config = {
-    clientId: '',
-    clientSecret: '',
+    clientId: "amzn1.application-oa2-client.69080b76d49a40938a03c0f354966775",
+    clientSecret: "90bb6fb632cc46fa24ee96a112e33b83ae6825cacfeee7453da75e2dfce3458b",
     redirectUrl: 'https://localhost:3000/authresponse',
-    lwaRedirectHost: 'amazon.com',
-    lwaApiHost: 'api.amazon.com',
+    lwaRedirectHost: "amazon.com",
+    lwaApiHost: "api.amazon.com",
     validateCertChain: true,
-    sslKey: '',
-    sslCert: '',
-    sslCaCert: '',
+    sslKey: "/home/pi/Desktop/alexa-avs-sample-app/samples/javaclient/certs/server/node.key",
+    sslCert: "/home/pi/Desktop/alexa-avs-sample-app/samples/javaclient/certs/server/node.crt",
+    sslCaCert: "/home/pi/Desktop/alexa-avs-sample-app/samples/javaclient/certs/ca/ca.crt",
     products: {
-        "": [""], // Fill in with valid device values, eg: "testdevice1": ["DSN1234", "DSN5678"]
+        "myRasPiDev": ["1xxxxxxxxxx"],
     },
 };
 

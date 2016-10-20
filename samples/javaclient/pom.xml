@@ -4,8 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.amazon.alexa.avs</groupId>
   <artifactId>sample-java-client</artifactId>
-  <version>20160207.1</version>
-  <packaging>jar</packaging>
+  <version>20160207.0</version>
   <name>Alexa Voice Service Sample Java Client</name>
   <url>https://developer.amazon.com/appsandservices/solutions/alexa/alexa-voice-service</url>
 
@@ -144,6 +143,12 @@
       <groupId>javax.servlet</groupId>
       <artifactId>javax.servlet-api</artifactId>
       <version>3.1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>net.java.dev.jna</groupId>
+      <artifactId>jna</artifactId>
+      <version>4.1.0</version>
+      <scope>compile</scope>
     </dependency>
   </dependencies>
   <build>
